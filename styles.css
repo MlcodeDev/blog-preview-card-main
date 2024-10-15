@@ -34,7 +34,7 @@ ol[role='list'] {
 /* Set core body defaults */
 html, body{
   height: 100%;
-}
+}width
 body {
   line-height: 1.5;
 }
@@ -133,6 +133,8 @@ textarea:not([rows]) {
   
   --cr-wrapper: 20px;
   --cr-illustration: 10px;
+  --cr-learning: 4px;
+
   --box-shadow-offset: 8px;
 }
 
@@ -190,10 +192,32 @@ body {
 
 /*TODO Add animations*/
 
-.illustration-article{
+.txt-img-wrapper{
   max-height: 200px;
   max-width: 336px;
   margin: var(--spacing-200);
+}
+
+.illustration-article{
   border-radius: var(--cr-illustration);
 }
+
+.txt-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-self: flex-start;
+  margin-top: var(--spacing-200);
+}
+
+.txt-learning{
+  background-color: var(--clr-yellow);
+  width: 5.125em;
+  min-height: 1.8125em;
+  border-radius: var(--cr-learning);
+  display: flex;
+  justify-content: center;
+  align-items: center; 
+}
+
 
