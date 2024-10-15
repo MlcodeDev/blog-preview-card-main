@@ -115,7 +115,7 @@ textarea:not([rows]) {
 
   --clr-bg: var(--clr-yellow);
 
-  --spacing-200: 1em;
+  --spacing-200: 1.5em;
   --spacing-150: .75em;
   --spacing-100: .5em;
   --spacing-50: .25em;
@@ -127,6 +127,7 @@ textarea:not([rows]) {
   
   --fw-ExtraBold: 800;
   --fw-Medium: 500;
+  --fw-Bold: 700;
 
   --ff-primary: Figtree;
   --lh-default: 150%;
@@ -157,6 +158,13 @@ textarea:not([rows]) {
   font-family: var(--ff-primary);
   font-size: var(--fs-3);
   font-weight: var(--fw-Medium);
+  line-height: var(--lh-default);
+}
+
+.text-preset-3-bold{
+  font-family: var(--ff-primary);
+  font-size: var(--fs-3);
+  font-weight: var(--fw-Bold);
   line-height: var(--lh-default);
 }
 
@@ -196,6 +204,7 @@ body {
   max-height: 200px;
   max-width: 336px;
   margin: var(--spacing-200);
+  /* margin: 24px; */
 }
 
 .illustration-article{
@@ -207,6 +216,7 @@ body {
   flex-direction: column;
   justify-content: start;
   align-self: flex-start;
+  gap: var(--spacing-150);
   margin-top: var(--spacing-200);
 }
 
@@ -220,4 +230,14 @@ body {
   align-items: center; 
 }
 
+.fc-gray-500{
+  color: var(--clr-gray-500);
+}
 
+.author{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-150);
+  margin-top: var(--spacing-200);
+}
