@@ -195,16 +195,30 @@ body {
   box-shadow: var(--box-shadow-offset) var(--box-shadow-offset) var(--clr-black);
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; 
+  transition: box-shadow 500ms ease; 
 }
 
-/*TODO Add animations*/
+.wrapper:hover{
+  --scale-factor: 8px;
+  --box-shadow-offset-new: calc(var(--box-shadow-offset) + var(--scale-factor));
+  box-shadow: var(--box-shadow-offset-new) var(--box-shadow-offset-new);
+}
+
+.wrapper h1{
+  color: black;
+  transition: color 500ms linear;
+}
+
+.wrapper:hover h1{
+  color: var(--clr-yellow);
+}
+
 
 .txt-img-wrapper{
   max-height: 200px;
   max-width: 336px;
   margin: var(--spacing-200);
-  /* margin: 24px; */
 }
 
 .illustration-article{
