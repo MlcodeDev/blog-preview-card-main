@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&display=swap');
+
+#author{
+  position:absolute;
+  bottom: 1em;
+  right: 1em;
+  font-family: Raleway;
+  transition: opacity 0.3s ease-in-out;
+  color: black;
+  text-decoration: none;
+}
+
+#author:hover{
+  opacity: 0.6;
+}
+
